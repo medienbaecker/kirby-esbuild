@@ -2,8 +2,6 @@
 
 I'm not a big fan of complex build setups. So this is the easiest way to compile JavaScript and CSS files with live reloading I could come up with.
 
-![preview](https://github.com/medienbaecker/esbuild-plainkit/assets/7975568/d15bc7ef-cab3-4c5c-8439-1e1e13cac10c)
-
 ## Features
 
 ✨ Bundles and minifies JavaScript with [esbuild](https://esbuild.github.io/).

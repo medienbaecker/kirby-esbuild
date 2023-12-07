@@ -3,6 +3,9 @@
 // --------------------------------------------------
 
 import esbuild from "esbuild";
+import { sassPlugin } from "esbuild-sass-plugin";
+import postcss from "postcss";
+import autoprefixer from "autoprefixer";
 import browserSync from "browser-sync";
 
 // --------------------------------------------------
@@ -21,7 +24,8 @@ const jsFiles = [
 
 // CSS files
 const cssFiles = [
-  "assets/css/style.css"
+  "assets/scss/style.scss",
+  "assets/scss/panel.scss",
 ]
 
 // --------------------------------------------------
@@ -59,18 +63,24 @@ await jsContext.watch();
 
 // --------------------------------------------------
 // 🎨 CSS
-// Compiles and minifies CSS files
+// Compiles SCSS files to CSS with vendor prefixes
 // --------------------------------------------------
 
 const cssContext = await esbuild.context({
   entryPoints: cssFiles,
   outdir: "assets/css",
-  outExtension: {
-    ".css": ".min.css"
-  },
   minify: true,
   sourcemap: true,
-  target: ["chrome88", "firefox78", "safari14"],
+  plugins: [
+    sassPlugin({
+      async transform(source) {
+        const { css } = await postcss([autoprefixer]).process(source, {
+          from: undefined // This is needed to prevent postcss from trying to resolve the file path
+        });
+        return css;
+      },
+    })
+  ]
 })
 
 await cssContext.watch();
@@ -86,6 +96,7 @@ browserSyncInstance.watch([
   "site/*/**",
   "!site/sessions/**",
   "!site/cache/**",
+  "!site/logs/**",
   "content/**/*.*"
 ]).on("change", (file) => {
   browserSyncInstance.reload(file);
