@@ -1,6 +1,6 @@
 # Kirby esbuild
 
-This is a simple and efficient build setup for compiling JavaScript and CSS files with live reloading. It utilizes [esbuild](https://esbuild.github.io/) for bundling and minifying JavaScript, and [PostCSS](https://github.com/postcss/postcss) for compiling and minifying CSS.
+This is a simple and efficient build setup for compiling JavaScript and CSS files with live reloading. It utilizes [esbuild](https://esbuild.github.io/) for bundling and minifying JavaScript, and [PostCSS](https://github.com/postcss/postcss) for compiling and minifying CSS. I added Sass functionality to a separate [sass branch](https://github.com/medienbaecker/kirby-esbuild/tree/sass).
 
 ## Features
 
