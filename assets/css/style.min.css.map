@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["style.css"],
+  "sourcesContent": [":root {\n  font: 20px system-ui, sans-serif;\n}\n\n.test {\n  h1 {\n    color: #f5a10e;\n  }\n}"],
+  "mappings": "AAAA,MACE,KAAM,KAAK,SAAS,CAAE,UACxB,CAEA,CAAC,KACC,GACE,MAAO,OACT",
+  "names": []
+}

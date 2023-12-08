@@ -1,0 +1,9 @@
+:root {
+  font: 20px system-ui, sans-serif;
+}
+
+.test {
+  h1 {
+    color: #f5a10e;
+  }
+}
