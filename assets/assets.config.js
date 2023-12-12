@@ -70,6 +70,8 @@ const cssContext = await esbuild.context({
   },
   minify: true,
   sourcemap: true,
+  bundle: true,
+  external: ["*.png", "*.jpg", "*.jpeg", "*.gif", "*.svg", "*.woff", "*.woff2", "*.ttf", "*.otf", "*.eot"],
   target: ["chrome88", "firefox78", "safari14"],
 })
 

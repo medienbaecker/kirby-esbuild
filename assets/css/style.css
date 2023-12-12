@@ -1,3 +1,5 @@
+@import "reset";
+
 :root {
   font: 20px system-ui, sans-serif;
 }

@@ -1,7 +1,7 @@
 {
   "version": 3,
-  "sources": ["style.css"],
-  "sourcesContent": [":root {\n  font: 20px system-ui, sans-serif;\n}\n\n.test {\n  h1 {\n    color: #f5a10e;\n  }\n}"],
-  "mappings": "AAAA,MACE,KAAM,KAAK,SAAS,CAAE,UACxB,CAEA,CAAC,KACC,GACE,MAAO,OACT",
+  "sources": ["reset.css", "style.css"],
+  "sourcesContent": ["*, *::before, *::after {\n  box-sizing: border-box;\n}\n* {\n  margin: 0;\n}\nhtml, body {\n  height: 100%;\n}\nimg, picture, video, canvas, svg {\n  display: block;\n  max-width: 100%;\n}\ninput, button, textarea, select {\n  font: inherit;\n}\nh1, h2, h3, h4, h5, h6 {\n  margin: 0;\n  font-size: inherit;\n  font-weight: inherit;\n}\n", "@import \"reset\";\n\n:root {\n  font: 20px system-ui, sans-serif;\n}\n\n.test {\n  h1 {\n    color: #f5a10e;\n  }\n}"],
+  "mappings": "AAAA,EAAG,CAAC,QAAU,CAAC,OACb,WAAY,UACd,CACA,EAHA,OAIU,CACV,CACA,KAAM,KACJ,OAAQ,IACV,CACA,IAAK,QAAS,MAAO,OAAQ,IAC3B,QAAS,MACT,UAAW,IACb,CACA,MAAO,OAAQ,SAAU,OACvB,KAAM,OACR,CACA,GAAI,GAAI,GAAI,GAAI,GAAI,GAhBpB,OAiBU,EACR,UAAW,QACX,YAAa,OACf,CClBA,MACE,KAAM,KAAK,SAAS,CAAE,UACxB,CAEA,CAAC,KACC,GACE,MAAO,OACT",
   "names": []
 }
