@@ -33,7 +33,6 @@ const browserSyncInstance = browserSync.create();
 browserSyncInstance.init({
   proxy: domain, // Set the proxy to the valet domain
   host: domain, // Set the host to the valet domain
-  open: "external", // Automatically open the valet domain in the browser
   reloadOnRestart: true, // Reload the browser when we restart the server
   notify: false, // I don't want to see the BrowserSync notification in the browser
   ui: false, // Disable the BrowserSync UI
