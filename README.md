@@ -6,7 +6,7 @@ This is a simple and efficient build setup for compiling JavaScript and CSS file
 
 ✨ Bundles and minifies JavaScript with [esbuild](https://esbuild.github.io/).
 
-🎨 Compiles and minifies CSS. This means you can use native CSS nesting and it will be transpiled to CSS that works in older browsers (Chrome >88, Firefox >78 and Safari >14).
+🎨 Compiles, bundles and minifies CSS. This means you can use Sass-like @import and native CSS nesting. It will be transpiled to CSS that works in older browsers (Chrome >88, Firefox >78 and Safari >14).
 
 ⚡ Live reloading with [Browsersync](https://browsersync.io/) for files in `assets/`, `content/` and `site/`.
 
